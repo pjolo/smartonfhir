@@ -10,7 +10,7 @@ function createMedicationGrid(bundle, patientId, userid) {
         console.log(v);
         return (
             `<tr>
-      
+          <td class="text-center">${v.resource.intent}</td>
        <td class="text-center">${v.resource.status}</td>
        <td>${v.resource.medicationCodeableConcept.text}</td>
        <td class="text-center">${formatdate(v.resource.authoredOn)}</td>
